@@ -1,0 +1,36 @@
+section#records
+	.container
+		h3.general-title.general-title-rec.hide Записей мастер-класса 
+			span более нет в свободном доступе
+		p.rec-text.rec-text-sale.hide Но Вы можете купить записи мастер-класса за 390р. и радоваться жизни вместе с теми, кто смотрел
+		a.button.button-buy-rec.hide(href="https://shop.mastervision.su/?r=ordering/cart/as1&id=3507&clean=true&lg=ru", target="_blank") Купить записи
+		h3.general-title.general-title-rec Записи занятий
+		.recs-container
+			ul.recs-links
+				li День 1
+				li День 2
+			.recs
+				.rec.rec-1
+					h4.rec-title Запись занятия от 05.08.19
+					.video-wrapper.video-wrapper-rec
+						iframe(src="https://player.vimeo.com/video/348979472"  allowFullScreen mozallowfullscreen webkitAllowFullScreen)
+					p.rec-text Занятие состоится 05.08.19, в 19:00 мск
+					p.rec-text Запись занятия появится здесь 06.08.19, после 13:00 мск
+				.rec.rec-2
+					h4.rec-title Запись занятия от 0608.19
+					.video-wrapper.video-wrapper-rec.hide
+						iframe(src="https://player.vimeo.com/video/349168959"  allowFullScreen mozallowfullscreen webkitAllowFullScreen)
+					p.rec-text Занятие состоится 06.08.19, в 19:00 мск
+					p.rec-text Запись занятия появится здесь 07.08.19, после 13:00 мск
+		h4.about-recs Записи будут в свободном доступе до 10.08.19
+		h3.general-title.general-title-feedback Ваши вопросы к Ольге пишите 
+			span в формах ниже:
+		.row.feedback
+			.col-md-6.col-sm-6
+				#vk
+					#vk_comments
+					script(type="text/javascript")
+						| VK.Widgets.Comments("vk_comments", { limit: 15,  attach: 0, autoPublish: 1 });
+			.col-md-6.col-sm-6
+				#fb
+					.fb-comments(data-href= head_url data-width="100%" data-numposts="15" data-order-by="reverse_time")

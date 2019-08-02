@@ -1,0 +1,27 @@
+-var head_url = 'https://kononenko.mastervision.su/nothingness-perfection/';
+-var head_title = '«Ничтожество-Совершенство»';
+-var head_description = 'Записи онлайн-мастер-классов Ольги Кононенко';
+-var styles = 'css/styles.min.css';
+-var fav_ico = 'favicon.ico';
+-var fav_png = 'favicon.png';
+-var fb_content = '2030481470529055';
+-var oferta = 'oferta/oferta.doc';
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/header
+		include pug/main/main
+		include pug/main/for
+		include pug/main/plan
+		include pug/main/get
+		include pug/main/prices
+		include pug/main/records
+		include pug/main/footer
+		include pug/main/scripts
+		//- include pug/scripts/callback
+		include pug/scripts/body_bottom_scripts

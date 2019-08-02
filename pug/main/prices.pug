@@ -1,0 +1,55 @@
+-var full_1 = '6 900р.'
+-var  full_2 = '23 500р.'
+-var  sale_1 = '2 000р.'
+-var  sale_2 = '4 000р.'
+-var  today_1 = '4 900р.'
+-var today_2 = '19 500р.'
+-var link_1 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3596&clean=true&lg=ru'
+-var link_2 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3600&clean=true&lg=ru'
+
+section#prices
+	.container
+		h3.general-title.general-title-prices Выберите свой пакет участия:
+		.packets
+			.row
+				.col-md-6.col-sm-6
+					.packet
+						.packet-head
+							h4.packet-head-title 
+								small пакет
+								| Стандарт
+						.packet-body
+							p.packet-body 4 занятия
+							p.more-button(data-toggle="modal" data-target="#packetStandart") подробнее
+							p.packet-body Skype-чат
+							p.packet-body Домашние задания
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span= full_1
+							p.cost.cost-sale Скидка:
+								span#sale-1= sale_1
+							p.cost.cost-today Стоимость сегодня:
+								span#today-1= today_1
+							a.button.button-cost(href= link_1 target="_blank")#link-1 Выбрать
+				.col-md-6.col-sm-6
+					.packet
+						.packet-head
+							h4.packet-head-title 
+								small пакет
+								| VIP
+						.packet-body
+							p.packet-body 4 занятия
+							p.more-button(data-toggle="modal" data-target="#packetVip") подробнее
+							p.packet-body Skype-чат
+							p.packet-body Домашние задания
+							p.packet-body  Индивидуальное сопровождение
+							p.packet-body Все вопросы-ответы в личку
+							p.packet-body  4 получасовых консультации
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span= full_2
+							p.cost.cost-sale Скидка:
+								span#sale-2= sale_2
+							p.cost.cost-today Стоимость сегодня:
+								span#today-2= today_2
+							a.button.button-cost(href= link_2  target="_blank")#link-2 Выбрать
