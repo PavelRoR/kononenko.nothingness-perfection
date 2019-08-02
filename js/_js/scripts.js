@@ -36,7 +36,7 @@ $(document).ready(function () {
                         $(tabs2).children("ul").children("li").removeClass("active2");
                         $(tabs2).children("ul").children("li").eq(i).addClass("active2")
                     };
-                showPage2(1);
+                showPage2(0);
                 $(tabs2).children("ul").children("li").each(function (index, element) {
                     $(element).attr("data-page-2", i);
                     i++;

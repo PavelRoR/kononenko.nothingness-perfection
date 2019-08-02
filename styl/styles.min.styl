@@ -1,7 +1,7 @@
 Roboto = "RobotoSlab", sans-serif
 Sans = "OpenSans", sans-serif
 SansB = "OpenSansBold", sans-serif
-purp = #BC7FFF
+purp = #BB80FF
 
 @font-face {
 	font-family: 'RobotoSlab';
@@ -103,13 +103,12 @@ footer
 .button
 	display block
 	margin 0 auto
-	border-radius: 25px
 	background-color: purp
 	font-family: SansB
 	text-align: center
 	width 100%
-	max-width 200px
-	line-height: 45px
+	max-width 250px
+	line-height: 55px
 	box-shadow: 0 0 12px 7px rgba(255,255,255,.1)
 	text-decoration: none
 	text-transform: uppercase
@@ -125,10 +124,27 @@ footer
 	font-size: 28px
 	text-align: center
 	font-family: Roboto
-	margin-bottom: 35px
+	margin-bottom: 50px
+.general-list
+	li
+		list-style none
+		position relative
+		padding-left: 16px
+		margin-bottom: 20px
+		&:before
+			content: ''
+			display block
+			position: absolute
+			top 10px
+			left 0
+			width 7px
+			height 7px
+			border-radius: 50px
+			background-color: purp
+		&:last-child
+			margin-bottom: 0
 
-
-@import 'main/header'
+@import 'main/main'
 @import 'main/for'
 @import 'main/plan'
 @import 'main/get'

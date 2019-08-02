@@ -21,9 +21,3 @@
 <IfModule mod_expires.c>
         ExpiresActive On ExpiresDefault "now"
 </IfModule>
-
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-
-ErrorDocument 404  https://mastervision.su/404/
