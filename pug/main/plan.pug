@@ -1,21 +1,19 @@
 mixin lesson(h4, ...items)
-	.lesson
-		.lesson-head
-			h4.lesson-head-title Занятие 
-				= h4
-		.lesson-body
-			.general-list.general-list-lesson
-				each item in items
-					li= item
+	.col-lg-3.col-md-6.col-sm-6
+		.lesson
+			.lesson-head
+				h4.lesson-head-title Занятие 
+					= h4
+			.lesson-body
+				.general-list.general-list-lesson
+					each item in items
+						li= item
 section#plan
 	.container
 		h3.general-title.general-title-plan ПЛАН КУРСА
-		.row
-			.col-md-3.col-sm-6
+		.lessons
+			.row
 				+lesson('1', 'Подготовка мозга – как работает НЛП', 'Влияние Архетипов', 'Что со мной ТАК?', 'Базовые пресуппозиции НЛП')
-			.col-md-3.col-sm-6
-				+lesson('2', 'Внутренняя и внешняя референция','Трансовые техники перепрограммирования','Треугольник Жертва- Спасатель –Палач','Техника Уолта Диснея')
-			.col-md-3.col-sm-6
+				+lesson('2', 'Внутренняя и внешняя референция','Трансовые техники перепрограммирования','Треугольник Жертва-Спасатель–Палач','Техника Уолта Диснея')
 				+lesson('3', 'Внутренний конфликт субличностей','Как влиять на себя и на окружение','Виды доминирования','Моделирование новой себя')
-			.col-md-3.col-sm-6
 				+lesson('4', 'Стирание программы «Ничтожество –Совершенство»','Самая лучшая ( счастливая , довольная …) версия себя','Мотивация ОТ и мотивация К')
