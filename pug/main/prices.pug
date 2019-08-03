@@ -20,7 +20,7 @@ section#prices
 								| Стандарт
 						.packet-body
 							p.packet-body-text 4 занятия
-							p.more-button(data-toggle="modal" data-target="#packetStandart") подробнее
+							p.more-button(data-toggle="modal" data-target="#lessons") подробнее
 							p.packet-body-text Skype-чат
 							p.packet-body-text Домашние задания
 						.packet-footer
@@ -39,7 +39,7 @@ section#prices
 								| VIP
 						.packet-body
 							p.packet-body-text 4 занятия
-							p.more-button(data-toggle="modal" data-target="#packetVip") подробнее
+							p.more-button(data-toggle="modal" data-target="#lessons") подробнее
 							p.packet-body-text Skype-чат
 							p.packet-body-text Домашние задания
 							p.packet-body-text  Индивидуальное сопровождение
@@ -53,3 +53,7 @@ section#prices
 							p.cost.cost-today Стоимость сегодня:
 								span#today-2= today_2
 							a.button.button-cost(href= link_2  target="_blank")#link-2 Выбрать
+		.timer
+			h4.timer-title Скидка уменьшится через:
+			.clock
+			.clock-stop
